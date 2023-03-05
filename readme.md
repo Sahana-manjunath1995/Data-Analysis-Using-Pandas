@@ -3,8 +3,7 @@ This project aims at analysing covid data and Indian gross domestic price data b
 
 ## Requirements
 - pandas
-- matplotlib
-- 
+
 ## Following steps are involved in data analysis
 
 ### Step 1
