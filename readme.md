@@ -1,5 +1,5 @@
 # Data analysis using Pandas
-This project aims at analysing covid data and Indian gross domestic price data by using Pandas and Matplotlib.
+This project aims at analysing covid data and Indian gross domestic price data by using Pandas.
 
 ## Requirements
 - pandas
