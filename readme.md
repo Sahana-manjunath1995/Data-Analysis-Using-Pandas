@@ -1,6 +1,9 @@
 # Data-Analysis-Using-Pandas
 This project aims at analysing covid data and Indian gross domestic price data by using Pandas.
 
+## Why Pandas?
+Pandas provides tools for reading and writing data to data structures and files. It also provides powerful aggregation functions for data manipulation. Pandas provide advanced data structures to store different types of labeled and relational data. This makes Python very flexible and extremely useful for data cleansing and manipulation.
+
 ## Requirements
 - pandas
 
@@ -73,6 +76,8 @@ Over the the years Indian gross domestic product price and per capita have incre
  
  Insights:
  Annual growth rate was highest in the year 2021 and lowest during the year 2020.
+ 
+ Covid data and Indian gross domestic price data were analyzed. Chart analysis was performed and insights were provided.
 
 
 
