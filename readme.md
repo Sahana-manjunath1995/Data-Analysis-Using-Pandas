@@ -1,19 +1,41 @@
-# Data analysis using Pandas
+# Data-Analysis-Using-Pandas
 This project aims at analysing covid data and Indian gross domestic price data by using Pandas.
 
 ## Requirements
 - pandas
 
 ## Following steps are involved in data analysis
+More codes for the individual steps can be found in Covid.ipynb and Indian_GDP.ipynb
 
 ### Step 1
 Read the excel file using read_excel() method and fill the NA(not available)data  with 0.
+```
+covid_data = pd.read_excel("covid_worldwide.xlsx")
+covid_data.fillna(0, inplace=True)
+```
+```
+data = pd.read_excel("india-gdp-gross-domestic-product.xlsx")
+data.fillna(0, inplace=True)
+```
 
 ### Step 2
-Select the rows and coloum data that needs to be compared by usig loc attribute
+Select the rows and coloum data that needs to be compared by usig loc or iloc attribute
+
+```
+cases_comparision =  covid_data.loc[ 0:9, ["Country","Total Cases", "Total Deaths", "Total Recovered", "Active Cases"]]
+```
+```
+row_select = data.iloc[-10:, 0:3]
+```
 
 ### Step 3
 Plot the graph for selected columns using Dataframe.plot.(graph_name)
+```
+cases_comparision.plot.bar(x="Country", rot=65, title="Covid case comparisions ")
+
+```
+row_select[["Year", "GDP ( Billions of US $)", "Per Capita (US $)"]].plot(x="Year", kind='bar', title='Indian GDP v/s Per capita over the years')
+```
 
 ## Data analysis for Covid data
 1. Below bar graph compares the types of Covid cases in top 10 countries of the world.
