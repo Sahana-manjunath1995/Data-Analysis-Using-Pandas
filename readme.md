@@ -1,5 +1,5 @@
 # Data-Analysis-Using-Pandas
-This project aims at analysing covid data and Indian gross domestic price data by using Pandas.
+This project aims at analysing covid data and Indian gross domestic price data by using Pandas. Covid data and Indian gross domestic price data were analyzed. Chart analysis was performed and insights were provided
 
 ## Why Pandas?
 Pandas provides tools for reading and writing data to data structures and files. It also provides powerful aggregation functions for data manipulation. Pandas provide advanced data structures to store different types of labeled and relational data. This makes Python very flexible and extremely useful for data cleansing and manipulation.
@@ -7,38 +7,11 @@ Pandas provides tools for reading and writing data to data structures and files.
 ## Requirements
 - pandas
 
-## Following steps are involved in data analysis
-More codes for the individual steps can be found in Covid.ipynb and Indian_GDP.ipynb
+1. Read the excel file using read_excel() method and fill the NA(not available)data  with 0.
 
-### Step 1
-Read the excel file using read_excel() method and fill the NA(not available)data  with 0.
-```
-covid_data = pd.read_excel("covid_worldwide.xlsx")
-covid_data.fillna(0, inplace=True)
-```
-```
-data = pd.read_excel("india-gdp-gross-domestic-product.xlsx")
-data.fillna(0, inplace=True)
-```
+2. Select the rows and coloum data that needs to be compared by usig loc or iloc attribute
 
-### Step 2
-Select the rows and coloum data that needs to be compared by usig loc or iloc attribute
-
-```
-cases_comparision =  covid_data.loc[ 0:9, ["Country","Total Cases", "Total Deaths", "Total Recovered", "Active Cases"]]
-```
-```
-row_select = data.iloc[-10:, 0:3]
-```
-
-### Step 3
-Plot the graph for selected columns using Dataframe.plot.(graph_name)
-```
-cases_comparision.plot.bar(x="Country", rot=65, title="Covid case comparisions ")
-```
-```
-row_select[["Year", "GDP ( Billions of US $)", "Per Capita (US $)"]].plot(x="Year", kind='bar', title='Indian GDP v/s Per capita over the years')
-```
+3. Plot the graph for selected columns using Dataframe.plot.(graph_name)
 
 ##  Data analysis for Covid data
 1. Below bar graph compares the types of Covid cases in top 10 countries of the world.
@@ -77,7 +50,7 @@ Over the the years Indian gross domestic product price and per capita have incre
  Insights:
  Annual growth rate was highest in the year 2021 and lowest during the year 2020.
  
- Covid data and Indian gross domestic price data were analyzed. Chart analysis was performed and insights were provided.
+
 
 
 
