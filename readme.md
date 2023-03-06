@@ -32,18 +32,18 @@ row_select = data.iloc[-10:, 0:3]
 Plot the graph for selected columns using Dataframe.plot.(graph_name)
 ```
 cases_comparision.plot.bar(x="Country", rot=65, title="Covid case comparisions ")
-
+```
 ```
 row_select[["Year", "GDP ( Billions of US $)", "Per Capita (US $)"]].plot(x="Year", kind='bar', title='Indian GDP v/s Per capita over the years')
 ```
 
-## Data analysis for Covid data
+##  Data analysis for Covid data
 1. Below bar graph compares the types of Covid cases in top 10 countries of the world.
 
-![covidbar](https://user-images.githubusercontent.com/115713117/222389906-a66c3b34-7d5b-4566-ac03-d5c560782a62.PNG)
+ ![covidbar](https://user-images.githubusercontent.com/115713117/222389906-a66c3b34-7d5b-4566-ac03-d5c560782a62.PNG)
 
-Insights:
-Among top 10 countries, USA has highest number of cases and Russia has lowest number of cases. Japan has highest number of active cases. 
+ Insights:
+ Among top 10 countries, USA has highest number of cases and Russia has lowest number of cases. Japan has highest number of active cases. 
 
 2. Below stacked bar represents the comparision of total death and recovered cases in top 10 countries of the world.
 
