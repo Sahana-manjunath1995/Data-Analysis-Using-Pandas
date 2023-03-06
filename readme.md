@@ -7,6 +7,8 @@ Pandas provides tools for reading and writing data to data structures and files.
 ## Requirements
 - pandas
 
+## Following steps are involved:
+
 1. Read the excel file using read_excel() method and fill the NA(not available)data  with 0.
 
 2. Select the rows and coloum data that needs to be compared by usig loc or iloc attribute
